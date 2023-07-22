@@ -1,0 +1,197 @@
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.companyLogo a{
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+}
+.nav_itemList{
+  display: flex;
+    align-items: center;
+}
+.nav_toggle-btn{
+  display: none;
+}
+
+.navbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+.nav_itemList{
+  padding-right: 5%;
+}
+.nav_itemList ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_itemList ul li a{
+  text-decoration: none;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 0 1vw;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.35s;
+}
+
+.nav_itemList ul li .active-nav{
+  color: #6293c4;
+}
+.companyLogo{
+  max-width: 150px;
+    margin-left: 3%;
+}
+.companyLogo img{
+  filter: invert(1);
+}
+.anyNameWrapper,
+.anyName{
+    width: fit-content;
+}
+/* 1) a tag 下面的线条effect 左进右出 */
+.anyName a{
+    position: relative;
+    text-decoration: none;
+}
+.anyName a:after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    background: #fff;
+    opacity: 0.8;
+    height: 2px;
+    width: 100%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    animation: portSliderLine2 0.45s cubic-bezier(.15,.75,.5,1) forwards;
+    transition: all 0.45s cubic-bezier(.15,.75,.5,1) 0s;
+}
+
+.anyNameWrapper:hover .anyName a:after {
+  animation: portSliderLine 0.45s cubic-bezier(.15,.75,.5,1) forwards;
+}
+
+
+@keyframes portSliderLine {
+    0% { transform: scaleX(0); transform-origin: left;}
+    100% { transform: scaleX(1); transform-origin: left;}
+  }
+  @keyframes portSliderLine2 {
+    0% { transform: scaleX(1); transform-origin: right;}
+    100% { transform: scaleX(0); transform-origin: right;}
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  .scrolldown{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+
+
+
+
+
+
+  
+
+  @media screen and (max-width: 992px){
+    #navbar{
+      background: rgba(0, 0, 0, 0.9);
+    }
+    .navbarWrapper {
+      height: 5rem;
+  }
+    .nav_toggle-btn{
+      display: inline-flex;
+      background: transparent;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .nav_toggle-btn svg{
+      color: #fff;
+    }
+    .nav_itemList ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      padding: 6rem 0 6rem 0;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      height: 100vh;
+      top: 0px;
+      transform: translateX(-50%);
+      width: 100%;
+      perspective: 400px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .nav_itemList ul li a{
+      
+      width: 100%;
+      padding: 1rem;
+      margin: 0;
+    }
+    .nav_itemList ul li a::after{
+      display: none;
+    }
+    .nav_itemList ul li{
+      margin: 0 auto;
+      text-align: center;
+      padding: 0;
+      width: 100%;
+      animation: navAnimation 600ms ease forwards;
+      opacity: 0;
+      /* background: rgba(0, 0, 0, 0.3); */
+    }
+    .nav_itemList ul li:nth-child(2){
+      animation-delay: 200ms;
+    }
+    .nav_itemList ul li:nth-child(3){
+      animation-delay: 400ms;
+    }
+    .nav_itemList ul li:nth-child(4){
+      animation-delay: 600ms;
+    }
+    .nav_itemList ul li:nth-child(5){
+      animation-delay: 800ms;
+    }
+    @keyframes navAnimation {
+      to{
+        transform: rotateX('0');
+        opacity: 1;
+      }
+    }
+    .anyNameWrapper, .anyName {
+      width: -moz-fit-content;
+      width: 100%;
+    }
+    .show_nav{
+      display: flex;
+    }
+    .nav_itemList .hide_nav{
+      display: none;
+    }
+    .nav_toggle-btn{
+      position: relative;
+    z-index: 999;
+    }
+    .companyLogo {
+      max-width: 100px;
+      margin-left: 3%;
+  }
+  }
