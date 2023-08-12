@@ -172,14 +172,16 @@
 }
 
 .meteor div:before {
+  background: hsla(0,0%,100%,.7);
+  border-radius: 50%;
+  box-shadow: 0 0 15px 4px #fff;
   content: "";
+  top: 0;
+  left: 0;
+  height: 4px;
+  margin-top: -1.5px;
   position: absolute;
   width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  margin-top: -2px;
-  background: rgba(255, 255, 255, .7);
-  box-shadow: 0 0 15px 4px #fff;
 }
 
 .meteor .meteor-1 {
@@ -779,6 +781,15 @@
 
 
 @media (width <=600px) {
+  .meteor .meteor-9 {
+    height: 2px;
+}
+  .meteor .meteor-5 {
+    height: 2px;
+}
+  .meteor div {
+    height: 2px;
+  }
   .sec2Right {
     display: grid;
     grid-template-columns: 1fr;
