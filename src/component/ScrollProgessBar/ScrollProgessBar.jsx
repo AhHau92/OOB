@@ -6,7 +6,6 @@ const ScrollProgressBar = () => {
   useEffect(() => {
     const calcScrollValue = () => {
       const scrollProgress = document.getElementById('progress');
-      const progressValue = document.getElementById('progress-value');
       const pos = document.documentElement.scrollTop;
       const calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrollValue = Math.round((pos * 100) / calcHeight);
