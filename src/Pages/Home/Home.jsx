@@ -51,7 +51,7 @@ const Home = () => {
                   data-aos-duration="500"
                   data-aos-offset="200"
                   data-aos-delay="1300">
-                <button className="button-57" role="button">
+                <button className="button-57">
                   <span className="text">Explore More</span>
                   <span>Explore More</span>
                 </button>
@@ -85,7 +85,7 @@ const Home = () => {
                 <Link to="/Profile" data-aos="fade-up" data-aos-duration="500"
                   data-aos-offset="100"
                   data-aos-delay="500">
-                  <button className="button-57" role="button">
+                  <button className="button-57">
                     <span className="text">Learn More</span>
                     <span>Learn More</span>
                   </button>
@@ -282,7 +282,7 @@ const Home = () => {
                   data-aos-offset="200"
                   data-aos-delay="500">
                       <Link to="/Profile">
-                        <button className="button-57" role="button">
+                        <button className="button-57">
                           <span className="text">Learn More</span>
                           <span>Learn More</span>
                         </button>
