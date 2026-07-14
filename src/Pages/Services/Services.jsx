@@ -96,7 +96,7 @@ const Services = () => {
                 </p>
 
                 <Link to="/Profile">
-                  <button className="button-57 text-center" role="button">
+                  <button className="button-57 text-center">
                     <span className="text">See All Projects</span>
                     <span>See All Projects</span>
                   </button>
@@ -117,7 +117,7 @@ const Services = () => {
                 </p>
 
                 <Link to="/Profile">
-                  <button className="button-57 text-center" role="button">
+                  <button className="button-57 text-center">
                     <span className="text">See All Projects</span>
                     <span>See All Projects</span>
                   </button>
@@ -158,7 +158,7 @@ const Services = () => {
                 </p>
 
                 <Link to="/Profile">
-                  <button className="button-57 text-center" role="button">
+                  <button className="button-57 text-center">
                     <span className="text">See All Projects</span>
                     <span>See All Projects</span>
                   </button>
@@ -188,7 +188,7 @@ const Services = () => {
                 </p>
 
                 <Link to="/Profile">
-                  <button className="button-57 text-center" role="button">
+                  <button className="button-57 text-center">
                     <span className="text">See All Projects</span>
                     <span>See All Projects</span>
                   </button>
