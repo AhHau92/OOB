@@ -8,11 +8,13 @@ import Process from "./Pages/Process/Process";
 import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./component/Footer/Footer";
 import ScrollProgressBar from "./component/ScrollProgessBar/ScrollProgessBar";
+import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
 // import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
